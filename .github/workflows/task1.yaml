@@ -13,5 +13,5 @@ jobs:
         uses: actions/checkout@v4
 
       - name: print info
-        uses: echo "triggered"
+        run: echo "triggered"
         
