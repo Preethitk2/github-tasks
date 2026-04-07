@@ -1,0 +1,17 @@
+name: task-1
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    run-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: print info
+        uses: echo "triggered"
+        
